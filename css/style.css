@@ -9,10 +9,14 @@
 /* shared styles */
 
 .btn-primary {
-    width: 180px;
-    height: 64px;
+    padding: 20px 25px;
     background-color: #FF900E;
-    color: white;
+    border-radius: 8px;
+    color: #FFF;
+    font-size: 1.25rem;
+    font-weight: 700;
+    cursor: pointer;
+    border: none;
 }
 
 
@@ -54,19 +58,10 @@ nav>ul>li>a {
 
 /* banner styles */
 
-.banner {
-    margin: 105px 240px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-}
-
 .banner-content {
     max-width: 862px;
-    gap: 32px;
-    margin-bottom: 50px;
+    text-align: center;
+    margin: 0 auto;
 }
 
 .banner-title {
@@ -79,4 +74,34 @@ nav>ul>li>a {
     color: #727272;
 }
 
-.
+.banner img {
+    margin-top: 40px;
+    width: 100%;
+}
+
+
+/* responsive media query */
+
+
+/* mobile devices */
+
+@media screen and (max-width:576px) {
+    header {
+        padding: 10px 15px;
+    }
+    nav {
+        flex-direction: column;
+    }
+}
+
+
+/* medium screen devices */
+
+@media screen and (min-width:576px) and (max-width:960px) {
+    header {
+        padding: 10px 15px;
+    }
+    nav {
+        flex-direction: column;
+    }
+}
